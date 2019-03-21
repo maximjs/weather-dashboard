@@ -5,7 +5,7 @@
 ### Тестовое задание на позицию frontend разработчика
 
 Написать простое приложение - Weather dashboard, используя
-https://openweathermap.org/api​(есть бесплатный тариф).
+https://openweathermap.org/api ​(есть бесплатный тариф).
 Отправная визуальная точка из HTML + CSS показаны тут:
 https://jsfiddle.net/8pqekfaL/26/
 
