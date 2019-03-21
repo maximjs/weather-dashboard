@@ -1,0 +1,78 @@
+.app
+  display: flex
+  flex-direction: column
+  margin: 30px
+
+.dashboard
+  margin-top: 80px
+  display: flex
+  flex-wrap: wrap
+  flex-grow: 1
+  align-items: flex-start
+  &Placeholder
+    display: flex
+    flex-grow: 1
+    justify-content: center
+    align-items: center
+
+.weather
+  position: relative
+  border: 1px solid #bbb
+  margin-right: 5px
+  margin-bottom: 5px
+  padding: 0 10px
+  min-width: 80px
+  display: flex
+  flex-direction: column
+  align-items: center
+  &Delete
+    display: none
+    position: absolute
+    right: -5px
+    top: -10px
+    border: 1px solid red
+    border-radius: 10px
+    color: red
+    height: 20px
+    line-height: 20px
+    text-align: center
+    cursor: pointer
+    background: white
+    padding: 0 5px
+  &:hover &Delete
+    display: block
+
+.inputCity
+  position: relative
+  .loading
+    width: 40px
+    height: 40px
+    position: absolute
+    bottom: -50px
+    left: 40px
+    // right: 0
+    // margin: 0 auto
+    opacity: 0.5
+    color: grey
+    &::after
+      content: 'Loading data...'
+      display: inline-block
+      font-weight: 400
+      font-size: 20px
+      position: absolute
+      bottom: -25px
+      left: -40px
+      width: 130px
+  .input
+    height: 30px
+    &Valid
+      border: 2px solid green
+    &Invalid
+      border: 2px solid red
+  &Add
+    height: 36px
+  &Delete
+    height: 36px
+
+.error
+  color: red
